@@ -3,6 +3,17 @@ import datetime
 import requests
 from app_utils import *
  
+
+@st.dialog(title="Chatbot",width=1200)
+def show_diaog(itenary):
+
+    st.write(itenary)
+
+    submit = st.button("Sounds good! Let's go!")    
+    if submit:
+        update_itenerary(itenary)
+        st.session_state.page = "Chatbot"
+        st.rerun()
  
 def travel_form():
     st.title("Welcome to AI Globertrotter,")
@@ -27,16 +38,14 @@ def travel_form():
  
         if submit:
             res = build_itinerary(travelling_to, flight_number, hotel_name, eating_preference, departure_date, return_date, interests, comments)
-            st.write(res)
+            show_diaog(res)
  
 def get_current_location():
-    try:
-        response = requests.get('https://ipinfo.io', timeout=5)
-        data = response.json()
-        return f"Your location is: {data.get('city', 'Unknown City')}, {data.get('region', 'Unknown Region')}, {data.get('country', 'Unknown Country')}"
-    except requests.RequestException:
-        return "Unable to fetch location."
- 
+    pass
+
+
+
+
 def chatbot_ui():
     st.title("AI Chatbot")
  
@@ -74,10 +83,12 @@ def chatbot_ui():
             st.write(f"Bot: {message['bot']}")
  
 # Sidebar navigation
-st.sidebar.title("Navigation")
-page = st.sidebar.radio("Select a page", ["Travel Form", "Chatbot"])
+# st.sidebar.title("Navigation")
+
+if "page" not in st.session_state:
+    st.session_state.page = "Travel Form"
  
-if page == "Travel Form":
+if st.session_state.page == "Travel Form":
     travel_form()
-elif page == "Chatbot":
+elif st.session_state.page == "Chatbot":
     chatbot_ui()
