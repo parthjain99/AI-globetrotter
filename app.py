@@ -2,7 +2,8 @@ import streamlit as st
 import datetime
 import requests
 from app_utils import *
- 
+
+st.set_page_config(layout="wide")
 
 @st.dialog(title="Chatbot",width=1200)
 def show_diaog(itenary):
@@ -17,7 +18,7 @@ def show_diaog(itenary):
  
 def travel_form():
     st.title("Welcome to AI Globertrotter,")
-    st.title("Pierie")
+    st.title("Pierre")
  
     col1, col2 = st.columns(2)
  
@@ -40,54 +41,34 @@ def travel_form():
             res = build_itinerary(travelling_to, flight_number, hotel_name, eating_preference, departure_date, return_date, interests, comments)
             show_diaog(res)
  
-def get_current_location():
-    pass
-
-
-
-
 def chatbot_ui():
-    st.title("AI Chatbot")
+    st.title("AI Globertrotter")
+    new_trip = st.button("New Trip")
+    if new_trip:
+        st.session_state.page = "Travel Form"
+        st.rerun()
+    
+    # chat_container = st.container()
+    # Left column: Display the itinerary loaded from the file
+    itinerary = read_itenerary()  # Fetch the itinerary from the file
+    st.text_area("Your Itinerary", itinerary, height=200, disabled=True)
  
-    chat_container = st.container()
+    messages = st.container(height = 300, border=True)
+    if prompt := st.chat_input("Say something"):
+        # Clear previous messages
+        messages.empty()
+        bot_response = agent(prompt)
+        # Display user message and bot response
+        messages.chat_message("user").write(prompt)
+        bot_response = f"Echo: {bot_response}"  # Replace with actual bot response logic
+        messages.chat_message("assistant").write(bot_response)
+        
+
  
-    if 'messages' not in st.session_state:
-        st.session_state.messages = []
- 
-    def update_chat(user_message, bot_response):
-        st.session_state.messages.append({"user": user_message, "bot": bot_response})
- 
-    def generate_response(user_message):
-        user_message = user_message.lower()
-        if "time" in user_message:
-            response = f"The current time is: {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
-        elif "date" in user_message:
-            response = f"Today's date is: {datetime.datetime.now().strftime('%Y-%m-%d')}"
-        elif "location" in user_message:
-            response = get_current_location()
-        else:
-            response = f"Echoing: {user_message}"
-        return response
- 
-    with st.form(key="chat_form"):
-        user_message = st.text_area("You:", height=150, placeholder="Type your message here...")
-        submit_button = st.form_submit_button("Send")
- 
-    if submit_button and user_message:
-        bot_response = generate_response(user_message)
-        update_chat(user_message, bot_response)
- 
-    with chat_container:
-        for message in st.session_state.messages:
-            st.write(f"You: {message['user']}")
-            st.write(f"Bot: {message['bot']}")
- 
-# Sidebar navigation
-# st.sidebar.title("Navigation")
 
 if "page" not in st.session_state:
     st.session_state.page = "Travel Form"
- 
+
 if st.session_state.page == "Travel Form":
     travel_form()
 elif st.session_state.page == "Chatbot":

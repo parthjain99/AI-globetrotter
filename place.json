@@ -1,0 +1,422 @@
+{
+    "geocoded_waypoints":[
+       {
+          "geocoder_status":"OK",
+          "place_id":"ChIJ6fTXZ4vzUocRGUhZ9SZDH28",
+          "types":[
+             "airport",
+             "establishment",
+             "point_of_interest"
+          ]
+       },
+       {
+          "geocoder_status":"OK",
+          "partial_match":true,
+          "place_id":"ChIJa341qaL1UocRh_Caa8oilrE",
+          "types":[
+             "establishment",
+             "lodging",
+             "point_of_interest"
+          ]
+       }
+    ],
+    "routes":[
+       {
+          "bounds":{
+             "northeast":{
+                "lat":40.7843366,
+                "lng":-111.8940881
+             },
+             "southwest":{
+                "lat":40.765001,
+                "lng":-111.9857718
+             }
+          },
+          "copyrights":"Map data ©2024",
+          "legs":[
+             {
+                "arrival_time":{
+                   "text":"6:30\u202fAM",
+                   "time_zone":"America/Denver",
+                   "value":1726403457
+                },
+                "departure_time":{
+                   "text":"5:43\u202fAM",
+                   "time_zone":"America/Denver",
+                   "value":1726400627
+                },
+                "distance":{
+                   "text":"7.5 mi",
+                   "value":12032
+                },
+                "duration":{
+                   "text":"47 mins",
+                   "value":2830
+                },
+                "end_address":"170 S W Temple St, Salt Lake City, UT 84101, USA",
+                "end_location":{
+                   "lat":40.7651857,
+                   "lng":-111.894599
+                },
+                "start_address":"Salt Lake City International Airport (SLC), W Terminal Dr, Salt Lake City, UT 84122, USA",
+                "start_location":{
+                   "lat":40.7840356,
+                   "lng":-111.9846713
+                },
+                "steps":[
+                   {
+                      "distance":{
+                         "text":"0.7 mi",
+                         "value":1155
+                      },
+                      "duration":{
+                         "text":"15 mins",
+                         "value":911
+                      },
+                      "end_location":{
+                         "lat":40.7841008,
+                         "lng":-111.983334
+                      },
+                      "html_instructions":"Walk to Airport Station",
+                      "polyline":{
+                         "points":"gs|wFd_ojT?ACeA?KEqAImCEsAAKAg@?GAm@?A?a@@M?MD_@@C@KHYBGDKJQDGDETSBCFCNGJCDAHATAb@Ef@C^C\\ADA`@Cb@CdAGTCl@Cr@APA^?J@LTC@U@SCu@FeDTc@DC?_@ByAJSDI?WJa@\\QXIRC?MI@MGa@Uh@I^ALAJAXAb@?P?B?LAHENA@CHAJ?P?H@HBjA@d@"
+                      },
+                      "start_location":{
+                         "lat":40.7840356,
+                         "lng":-111.9846713
+                      },
+                      "steps":[
+                         {
+                            "distance":{
+                               "text":"0.4 mi",
+                               "value":625
+                            },
+                            "duration":{
+                               "text":"8 mins",
+                               "value":471
+                            },
+                            "end_location":{
+                               "lat":40.7810923,
+                               "lng":-111.9807814
+                            },
+                            "html_instructions":"Head <b>east</b> on <b>N Terminal Dr</b>",
+                            "polyline":{
+                               "points":"gs|wFd_ojT?ACeA?KEqAImCEsAAKAg@?GAm@?A?a@@M?MD_@@C@KHYBGDKJQDGDETSBCFCNGJCDAHATAb@Ef@C^C\\ADA`@Cb@CdAGTCl@Cr@APA^?J@"
+                            },
+                            "start_location":{
+                               "lat":40.7840356,
+                               "lng":-111.9846713
+                            },
+                            "travel_mode":"WALKING"
+                         },
+                         {
+                            "distance":{
+                               "text":"0.2 mi",
+                               "value":322
+                            },
+                            "duration":{
+                               "text":"4 mins",
+                               "value":269
+                            },
+                            "end_location":{
+                               "lat":40.783742,
+                               "lng":-111.9816211
+                            },
+                            "html_instructions":"Sharp <b>right</b> to stay on <b>N Terminal Dr</b>",
+                            "maneuver":"turn-sharp-right",
+                            "polyline":{
+                               "points":"y`|wFzfnjTLTC@U@SCu@FeDTc@DC?_@ByAJSDI?WJa@\\QXIR"
+                            },
+                            "start_location":{
+                               "lat":40.7810923,
+                               "lng":-111.9807814
+                            },
+                            "travel_mode":"WALKING"
+                         },
+                         {
+                            "distance":{
+                               "text":"59 ft",
+                               "value":18
+                            },
+                            "duration":{
+                               "text":"1 min",
+                               "value":14
+                            },
+                            "end_location":{
+                               "lat":40.7838326,
+                               "lng":-111.9815716
+                            },
+                            "html_instructions":"Turn <b>right</b>",
+                            "maneuver":"turn-right",
+                            "polyline":{
+                               "points":"kq|wFblnjTC?MI"
+                            },
+                            "start_location":{
+                               "lat":40.783742,
+                               "lng":-111.9816211
+                            },
+                            "travel_mode":"WALKING"
+                         },
+                         {
+                            "distance":{
+                               "text":"56 ft",
+                               "value":17
+                            },
+                            "duration":{
+                               "text":"1 min",
+                               "value":14
+                            },
+                            "end_location":{
+                               "lat":40.7838589,
+                               "lng":-111.9813343
+                            },
+                            "html_instructions":"Turn <b>right</b>",
+                            "maneuver":"turn-right",
+                            "polyline":{
+                               "points":"}q|wFxknjT@MGa@"
+                            },
+                            "start_location":{
+                               "lat":40.7838326,
+                               "lng":-111.9815716
+                            },
+                            "travel_mode":"WALKING"
+                         },
+                         {
+                            "distance":{
+                               "text":"0.1 mi",
+                               "value":173
+                            },
+                            "duration":{
+                               "text":"2 mins",
+                               "value":143
+                            },
+                            "end_location":{
+                               "lat":40.7841008,
+                               "lng":-111.983334
+                            },
+                            "html_instructions":"Sharp <b>left</b><div style=\"font-size:0.9em\">Destination will be on the right</div>",
+                            "maneuver":"turn-sharp-left",
+                            "polyline":{
+                               "points":"cr|wFhjnjTUh@I^ALAJAXAb@?P?B?LAHENA@CHAJ?P?H@HBjA@d@"
+                            },
+                            "start_location":{
+                               "lat":40.7838589,
+                               "lng":-111.9813343
+                            },
+                            "travel_mode":"WALKING"
+                         }
+                      ],
+                      "travel_mode":"WALKING"
+                   },
+                   {
+                      "distance":{
+                         "text":"6.4 mi",
+                         "value":10277
+                      },
+                      "duration":{
+                         "text":"18 mins",
+                         "value":1080
+                      },
+                      "end_location":{
+                         "lat":40.7693514,
+                         "lng":-111.8945389
+                      },
+                      "html_instructions":"Light rail towards To West Valley",
+                      "polyline":{
+                         "points":"ut|wF~vnjTDOCw@Cu@As@C}@Ci@Aa@?M@QDSLa@Ng@Lc@JWHMHOFIFENMLGLEHCPETAf@EbBM|AIb@Eh@I^?TAVC`@AVC|BObAGbAIb@Cl@EZCjCOl@EPARAP?N?H?N@LBH@JBLBLDVJNFVHLFNFHBHFLHJFPNJH?@PPJNPTZf@\\f@T\\HRHN@?HRJVP`@Pd@Rj@BDVt@Zz@h@vAN^BFN`@Td@HTJPR^JPLPPVVXPRNNJJPNJHJHZTPJXNHDJDTHPFRF^LZF@@PDNBf@H`@Fb@Df@B^@n@@b@Ar@Ed@EXCl@Kj@Mf@Qj@W`@Od@W`@U^WHGj@a@r@m@\\[\\]`@c@DET[Za@b@m@\\k@^m@b@{@JSXo@`@cAXy@ZkAR}@P}@H]NaAHy@JcAFu@?AFeAHoAJuABa@J_BJgBJyA?GJcBLqBLmBLmBJaBLqBFqAFkADeAFwBB}A?cCA}BE}BEkBAOIyAEq@Eq@KyA]mDQyAKo@CSO_AMq@Ia@WuAQaAWqASeAUcAS{@U_A?ASy@W_A[kAc@{AAEY_A]gAY}@AKIYOu@Mm@CUGWQ}@U}@Y_AYu@Wq@Sm@[m@Sa@GQg@uA]}@Ws@_@eAY}@Og@[aAc@wAUu@[cASk@Uw@]gAa@uA_@mAY_AEMSs@Oq@G[GWM{@E_@K}@?CEm@I_AAaAA{@?E?i@Aa@?{A?aB?s@?C?C?aA?I?eB?{A?_B@kB?EBwA?{A?cA?g@?k@A}@AeA?CAs@A_A?_A?iA?qA?gA?a@@g@?_@Bk@@K@_@@q@@o@?gA?iA?aB?aA?y@?]?c@Aw@AeA?aAAcA?s@?s@?w@?i@?q@A{@@{@?}@A}@@kA@eA?eB?w@?eA?kA?sA?cA?O?_A?_A?{A?kA?_B?aB@eB?u@?Y?aA?e@?eB?D?i@?sA?]?aA?eB?oB?yAAgA?cC?wB?q@?sC?iA?}CCeAAm@?K?}@?sA?}A?k@?w@?sB?qA?]?o@?[?uC?g@@m@?W@yA@_A?}@?aA?iA?M?y@?{@?e@?}@AqA?Y?qA?u@?[?C?c@AU?OAUASCe@Ci@Cc@AUAU?QAS?S?]?g@@aA?w@@oA@s@Ai@?Y?C?U?i@?g@?U?W?M?O@K?yA?cC?wA?I@q@?I?I@G@E@G@EBI@CBCFIFGBABAB?BAF?HAF?~@?pAAZ?l@?X@z@?L?b@?DC@A@ABCBC?A@C@C@EAGAI?EAK?S?o@AY?WAa@?uDA[?W@{A?C?O@M?A@c@@g@?_@?c@?S@Y?_B?qA?aA?KAe@@s@@W?ACe@?kA?e@Ae@Ai@?q@?}@?sA?SF?"
+                      },
+                      "start_location":{
+                         "lat":40.78426700000001,
+                         "lng":-111.983364
+                      },
+                      "transit_details":{
+                         "arrival_stop":{
+                            "location":{
+                               "lat":40.7693514,
+                               "lng":-111.8945389
+                            },
+                            "name":"Temple Square Station"
+                         },
+                         "arrival_time":{
+                            "text":"6:23\u202fAM",
+                            "time_zone":"America/Denver",
+                            "value":1726402980
+                         },
+                         "departure_stop":{
+                            "location":{
+                               "lat":40.78426700000001,
+                               "lng":-111.983364
+                            },
+                            "name":"Airport Station"
+                         },
+                         "departure_time":{
+                            "text":"6:05\u202fAM",
+                            "time_zone":"America/Denver",
+                            "value":1726401900
+                         },
+                         "headsign":"To West Valley",
+                         "line":{
+                            "agencies":[
+                               {
+                                  "name":"Utah Transit Authority",
+                                  "phone":"1 888-RIDE-UTA",
+                                  "url":"http://www.rideuta.com/"
+                               }
+                            ],
+                            "color":"#2eb566",
+                            "name":"Green Line",
+                            "text_color":"#ffffff",
+                            "url":"https://www.rideuta.com/Rider-Tools/Schedules-and-Maps/704-Green-Line",
+                            "vehicle":{
+                               "icon":"//maps.gstatic.com/mapfiles/transit/iw2/6/tram2.png",
+                               "name":"Light rail",
+                               "type":"TRAM"
+                            }
+                         },
+                         "num_stops":7
+                      },
+                      "travel_mode":"TRANSIT"
+                   },
+                   {
+                      "distance":{
+                         "text":"0.4 mi",
+                         "value":600
+                      },
+                      "duration":{
+                         "text":"8 mins",
+                         "value":476
+                      },
+                      "end_location":{
+                         "lat":40.7651857,
+                         "lng":-111.894599
+                      },
+                      "html_instructions":"Walk to 170 S W Temple St, Salt Lake City, UT 84101, USA",
+                      "polyline":{
+                         "points":"wwywFxk}iT?oAT??DH??KPPl@@b@?b@?ZCVBt@CT@ZIVAVFRAf@FH@b@KDFn@AhA@d@Kd@?N?b@Cl@CN@pA?@lAG@GDGBMH"
+                      },
+                      "start_location":{
+                         "lat":40.7694032,
+                         "lng":-111.8945319
+                      },
+                      "steps":[
+                         {
+                            "distance":{
+                               "text":"131 ft",
+                               "value":40
+                            },
+                            "duration":{
+                               "text":"1 min",
+                               "value":35
+                            },
+                            "end_location":{
+                               "lat":40.7694009,
+                               "lng":-111.8941317
+                            },
+                            "html_instructions":"Head <b>east</b> on <b>S Temple</b>",
+                            "polyline":{
+                               "points":"wwywFxk}iT?oA"
+                            },
+                            "start_location":{
+                               "lat":40.7694032,
+                               "lng":-111.8945319
+                            },
+                            "travel_mode":"WALKING"
+                         },
+                         {
+                            "distance":{
+                               "text":"0.3 mi",
+                               "value":493
+                            },
+                            "duration":{
+                               "text":"6 mins",
+                               "value":388
+                            },
+                            "end_location":{
+                               "lat":40.7650092,
+                               "lng":-111.8941044
+                            },
+                            "html_instructions":"Turn <b>right</b> onto <b>S W Temple St</b>",
+                            "maneuver":"turn-right",
+                            "polyline":{
+                               "points":"wwywFhi}iTT??DH??KPPl@@b@?b@?ZCVBt@CT@ZIVAVFRAf@FH@b@KDFn@AhA@d@Kd@?N?b@Cl@CN@pA?"
+                            },
+                            "start_location":{
+                               "lat":40.7694009,
+                               "lng":-111.8941317
+                            },
+                            "travel_mode":"WALKING"
+                         },
+                         {
+                            "distance":{
+                               "text":"144 ft",
+                               "value":44
+                            },
+                            "duration":{
+                               "text":"1 min",
+                               "value":34
+                            },
+                            "end_location":{
+                               "lat":40.765001,
+                               "lng":-111.894486
+                            },
+                            "html_instructions":"Turn <b>right</b> onto <b>200 S</b>",
+                            "maneuver":"turn-right",
+                            "polyline":{
+                               "points":"i|xwFbi}iT@lA"
+                            },
+                            "start_location":{
+                               "lat":40.7650092,
+                               "lng":-111.8941044
+                            },
+                            "travel_mode":"WALKING"
+                         },
+                         {
+                            "distance":{
+                               "text":"75 ft",
+                               "value":23
+                            },
+                            "duration":{
+                               "text":"1 min",
+                               "value":19
+                            },
+                            "end_location":{
+                               "lat":40.7651857,
+                               "lng":-111.894599
+                            },
+                            "html_instructions":"Turn <b>right</b><div style=\"font-size:0.9em\">Destination will be on the right</div>",
+                            "maneuver":"turn-right",
+                            "polyline":{
+                               "points":"g|xwFpk}iTG@GDGBMH"
+                            },
+                            "start_location":{
+                               "lat":40.765001,
+                               "lng":-111.894486
+                            },
+                            "travel_mode":"WALKING"
+                         }
+                      ],
+                      "travel_mode":"WALKING"
+                   }
+                ],
+                "traffic_speed_entry":[
+                   
+                ],
+                "via_waypoint":[
+                   
+                ]
+             }
+          ],
+          "overview_polyline":{
+             "points":"gs|wFd_ojT]{LAyAH_ATy@PYZYJGZKhAKlG_@`BEp@AJ@LTYBSCu@FiEZqCTa@Ja@\\QXIRC?MI@MGa@Uh@Kl@EzAAZMf@DpB@d@a@DDOCw@EiBGgBAo@Fe@v@eCb@m@\\UVIf@GjCS`COh@I^?l@Ex@EhHe@bG_@fACp@F~@XdA`@l@\\n@l@vAtBj@`Ax@rBjAbDlA`D~@lBbAtA~@~@dAt@dAd@`Bd@jATdALfADrA?xAKfAOrA_@lAg@fAm@h@_@~AoAbBcBrBwCbAiBd@cAz@}Bn@iCZ{AX{BZaEd@gHxA}Ub@uIJuEAaGKiFKiBKcBi@gGq@}EaAkFuAwGaA{D_DyKi@qCg@{Bs@uBk@_Bo@oAeByEeBmFiB}FuBcHcAsDOs@S{A[oDCmDAsG@aNB}FCwECwD?eGF_CBqA@wB?gHC_EC}LBmP?{O@eQ?D?i@?qB?qJAuJ?}ECcFAkE?uH@_MByG?mEAwJC_BMgCEqA@{C@cI@}I@}CD_@JWNQFCXCtDApC@b@?DCBCHMBICQAuACiG?sCBcA@_C@mG@}BCyCC_E?gBF?IA?oAT??DH??KPPpA@~@CVBt@CT@ZIVAVFz@DH@b@KDFn@AhA@d@Kt@?pAG`B@@lAG@OHMH"
+          },
+          "summary":"",
+          "warnings":[
+             "Walking directions are in beta. Use caution – This route may be missing sidewalks or pedestrian paths."
+          ],
+          "waypoint_order":[
+             
+          ]
+       }
+    ],
+    "status":"OK"
+ }
